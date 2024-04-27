@@ -3,11 +3,9 @@
 To deploy your Hortonworks stack using Ambari, you need to prepare your deployment environment:
 
 - [Set Up Password-less SSH]($SetUpPasswordLessSSH)
-- Set Up Service User Accounts
-
-Enable NTP on the Cluster and on the Browser Host
-
-Check DNS and NSCD
+- [Set Up Service User Accounts]($SetUpServiceUserAccounts)
+- [Enable NTP on the Cluster and on the Browser Host]($EnableNTPOnTheClusterAndOnTheBrowserHost)
+- [Check DNS and NSCD]($CheckDNSAndNSCD)
 
 Configuring iptables
 
