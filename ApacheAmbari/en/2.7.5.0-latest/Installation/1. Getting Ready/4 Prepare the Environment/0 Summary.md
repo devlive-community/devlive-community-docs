@@ -6,13 +6,8 @@ To deploy your Hortonworks stack using Ambari, you need to prepare your deployme
 - [Set Up Service User Accounts]($SetUpServiceUserAccounts)
 - [Enable NTP on the Cluster and on the Browser Host]($EnableNTPOnTheClusterAndOnTheBrowserHost)
 - [Check DNS and NSCD]($CheckDNSAndNSCD)
-
-Configuring iptables
-
-Disable SELinux and PackageKit and check the umask Value
-
-Download and set up database connectors
-
-Configuring a Database Instance for Ranger
-
-Install Databases for HDF services
+- [Configuring iptables]($ConfiguringIptables)
+- [Disable SELinux and PackageKit and check the umask Value]($DisableSELinuxAndPackageKitAndCheckTheUmaskValue)
+- [Download and set up database connectors]($DownloadAndSetUpDatabaseConnectors)
+- [Configuring a Database Instance for Ranger]($ConfiguringADatabaseInstanceForRanger)
+- [Install Databases for HDF services]($InstallDatabasesForHDFServices)
