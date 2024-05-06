@@ -1,25 +1,25 @@
 [TOC]
 
-On a server host that has Internet access, use a command line editor to perform the following:
+在具有 Internet 访问权限的服务器主机上，使用命令行编辑器执行以下操作：
 
-### Steps
+### 步骤
 
-1. Log in to your host as `root`.
-2. Download the Ambari repository file to a directory on your installation host.
+1. 以 `root` 身份登录到您的主机。
+2. 将 Ambari 存储库文件下载到安装主机上的目录。
 
     ```bash
     wget -nv https://username:password@archive.cloudera.com/p/ambari/sles12/2.x/updates/2.7.5.0/ambari.repo -O /etc/zypp/repos.d/ambari.repo
     ```
     
-    > Do not modify the `ambari.repo` file name. This file is expected to be available on the Ambari Server host during Agent registration.
+    > 不要修改 `ambari.repo` 文件名。该文件预计在代理注册期间在 Ambari Server 主机上可用。
 
-3. Confirm the downloaded repository is configured by checking the repo list.
+3. 通过检查存储库列表确认下载的存储库已配置。
 
     ```bash
     zypper repos
     ```
 
-    You should see the Ambari repositories in the list.
+    您应该在列表中看到 Ambari 存储库。
 
     ```bash
     # | Alias                    | Name                                 | Enabled | Refresh
@@ -30,17 +30,17 @@ On a server host that has Internet access, use a command line editor to perform 
     3 | opensuse                 | OpenSuse                             | Yes     | Yes
     ```
 
-    Version values vary, depending on the installation.
+   版本值因安装而异。
     
-    > When deploying a cluster having limited or no Internet access, you should provide access to the bits using an alternative method.
+    > 当部署互联网访问受限或没有互联网访问的集群时，您应该使用替代方法提供对这些位的访问。
     
-    > Ambari Server by default uses an embedded PostgreSQL database. When you install the Ambari Server, the PostgreSQL packages and dependencies must be available for install. These packages are typically available as part of your Operating System repositories. Please confirm you have the appropriate repositories available for the postgresql-server packages.
+    > Ambari Server 默认使用嵌入式 PostgreSQL 数据库。安装 Ambari Server 时，PostgreSQL 软件包和依赖项必须可供安装。这些软件包通常作为操作系统存储库的一部分提供。请确认您有可用于 postgresql-server 软件包的适当存储库。
 
-### Next Step
+### 下一步
 
-- [Install the Ambari Server]($InstallTheAmbariServer)
-- [Set Up the Ambari Server]($SetUpTheAmbariServer)
+- [安装 Ambari 服务器]($InstallTheAmbariServer)
+- [设置 Ambari 服务器]($SetUpTheAmbariServer)
 
-### More Information
+### 更多信息
 
-- [Using a Local Repository]($UsingALocalRepository)
+- [使用本地存储库]($UsingALocalRepository)
