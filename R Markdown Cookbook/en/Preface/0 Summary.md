@@ -1,0 +1,17 @@
+[TOC]
+
+> This book is published by [Chapman & Hall/CRC](https://www.routledge.com/p/book/9780367563837). The online version of this book is free to read here (thanks to Chapman & Hall/CRC), and licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). If you have any feedback, please feel free to [file an issue on GitHub](https://github.com/yihui/rmarkdown-cookbook/issues/new). Thank you!
+
+R Markdown is a powerful tool for combining analysis and reporting into the same document. Since the birth of the **rmarkdown** package [@R-rmarkdown] in early 2014, R Markdown has grown substantially from a package that supports a few output formats, to an extensive and diverse ecosystem that supports the creation of books, blogs, scientific articles, websites, and even resumes.
+
+There is a wealth of guidance that has been written over the past few years, and the book [*R Markdown: The Definitive Guide*](https://bookdown.org/yihui/rmarkdown/) [@rmarkdown2018] provides a detailed reference on the built-in R Markdown output formats of the **rmarkdown** package, as well as several other extension packages. However, we have received comments from our readers and publisher that it would be beneficial to provide more practical and relatively short examples to show the interesting and useful usage of R Markdown, because it can be daunting to find out how to achieve a certain task from the aforementioned reference book (put another way, that book is too dry to read). As a result, this cookbook was born.
+
+Despite the existence of the official documentation, R Markdown users often seek help on Stack Overflow, a popular Q&A forum. At the time of writing, there are more than 6,000 questions with [the `r-markdown` tag.](https://stackoverflow.com/questions/tagged/r-markdown) This huge number means that the use of the forum can be difficult if you do not have a specific problem to search for. Therefore, it may be hard for you to realize all possible things that you could do with R Markdown or how to do them. This book aims to draw together popular posts from Stack Overflow and other online resources (such as blog posts or tutorials) to provide up-to-date solutions for everyday queries that users commonly make. In fact, to help us make decisions on the potential topics to cover in this book, the second author of this book, Christophe, has built an R Markdown dashboard to scrape Stack Overflow daily for the most popular posts. Hopefully, our cookbook can become more useful by including recipes from these popular posts.
+
+This book is designed to provide a range of examples on how to extend the functionality of your R Markdown documents. As a cookbook, this guide is recommended to new and intermediate R Markdown users who desire to enhance the efficiency of using R Markdown and also explore the power of R Markdown.
+
+### References
+
+Allaire, JJ, Yihui Xie, Christophe Dervieux, Jonathan McPherson, Javier Luraschi, Kevin Ushey, Aron Atkins, et al. 2023. Rmarkdown: Dynamic Documents for r. https://github.com/rstudio/rmarkdown.
+
+Xie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. R Markdown: The Definitive Guide. Boca Raton, Florida: Chapman; Hall/CRC. https://bookdown.org/yihui/rmarkdown.
