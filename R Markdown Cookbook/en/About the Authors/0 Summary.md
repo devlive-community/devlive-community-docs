@@ -1,0 +1,5 @@
+[TOC]
+
+Yihui typed out most of the words in this book, which is the only justification for him being the “first” author. Christophe has made substantial contribution to this book by helping Yihui organize all the GitHub issues and occasionally writing a few sections. Emily was originally a reviewer of this book. Since Yihui was not patient enough to deal with her lengthy comments, he invited her to become a co-author of this book (out of revenge) to feel his pain of having to deal with so many additional things when he thought he was pretty much done! Just kidding… No, he invited her out of full appreciation, because her comments were so helpful, yet Yihui lacked the time to do all the improvements that she suggested.
+
+When you see the pronoun “I” in this book, it refers to Yihui. Using “I” instead of “We” does not mean the co-authors were forgotten, but Yihui wanted to express certain opinions completely on his own. He certainly wants to appear smart, but in case he is actually silly, he wants to be silly alone.
