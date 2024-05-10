@@ -7,6 +7,7 @@
 - [x] **Apache Ambari Installation 2.7.5.0 英文版**
 - [x] **Apache Ambari Installation 2.7.5.0 中文版**
 - [ ] **Apache Ambari Administering 2.7.5.0**
+- [ ] **Apache Ambari Installation 2.7.4.0 英文版**
 
 #### 工具&IDE
 
