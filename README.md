@@ -9,6 +9,7 @@
 - [ ] **Apache Ambari Administering 2.7.5.0**
 - [x] **Apache Ambari Installation 2.7.4.0 英文版**
 - [x] **Apache DolphinScheduler 1.2.0 中文版**
+- [x] **Apache DolphinScheduler 1.2.1 中文版**
 
 #### 工具&IDE
 
