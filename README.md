@@ -10,7 +10,7 @@
 - [x] **Apache Ambari Installation 2.7.4.0 英文版**
 - [x] [**Apache DolphinScheduler 1.2.0 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-1.2.0)
 - [x] [**Apache DolphinScheduler 1.2.1 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-1.2.1)
-- [ ] [**Apache DolphinScheduler 1.3.1 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-1.3.1)
+- [x] [**Apache DolphinScheduler 1.3.1 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-1.3.1)
 
 #### 工具&IDE
 
