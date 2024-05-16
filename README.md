@@ -8,13 +8,15 @@
 - [x] **Apache Ambari Installation 2.7.5.0 中文版**
 - [ ] **Apache Ambari Administering 2.7.5.0**
 - [x] **Apache Ambari Installation 2.7.4.0 英文版**
-- [x] **Apache DolphinScheduler 1.2.0 中文版**
-- [x] **Apache DolphinScheduler 1.2.1 中文版**
+- [x] [**Apache DolphinScheduler 1.2.0 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-1.2.0)
+- [x] [**Apache DolphinScheduler 1.2.1 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-1.2.1)
+- [ ] [**Apache DolphinScheduler 1.3.1 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-1.3.1)
 
 #### 工具&IDE
 
 - [x] **GitHub Cli**
 - [x] **GitHub Cli 中文版**
+- [x] [**夜莺 Nightingale V5 中文版**](https://docs.devlive.org/books/nightingale-zh-v5)
 
 #### 数据库&数据存储
 
