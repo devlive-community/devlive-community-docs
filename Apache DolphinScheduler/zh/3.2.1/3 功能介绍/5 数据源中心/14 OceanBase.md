@@ -2,7 +2,7 @@
 
 # OceanBase 数据源
 
-![oceanbase](/projects/apache-dolphin-scheduler-zh-3.2.1/5097cc38207e8c87054ac3edd771a662.png)
+![oceanbase](https://dolphinscheduler.apache.org/img/new_ui/dev/datasource/oceanbase.png)
 
 - 数据源：选择 OCEANBASE
 - 数据源名称：输入数据源的名称

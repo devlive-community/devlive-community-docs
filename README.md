@@ -11,7 +11,7 @@
 - [x] [**Apache DolphinScheduler 1.2.0 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-1.2.0)
 - [x] [**Apache DolphinScheduler 1.2.1 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-1.2.1)
 - [x] [**Apache DolphinScheduler 1.3.1 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-1.3.1)
-- [ ] [**Apache DolphinScheduler 3.2.1 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-3.2.1)
+- [x] [**Apache DolphinScheduler 3.2.1 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-3.2.1)
 
 #### 工具&IDE
 
