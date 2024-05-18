@@ -15,8 +15,8 @@
 
 #### 工具&IDE
 
-- [x] **GitHub Cli**
-- [x] **GitHub Cli 中文版**
+- [x] [**GitHub Cli**](https://docs.devlive.org/books/github-cli-en)
+- [x] [**GitHub Cli 中文版**](https://docs.devlive.org/books/github-cli-zh)
 - [x] [**夜莺 Nightingale V5 中文版**](https://docs.devlive.org/books/nightingale-zh-v5)
 
 #### 数据库&数据存储
