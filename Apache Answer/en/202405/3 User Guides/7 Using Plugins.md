@@ -72,7 +72,7 @@ $ ./new_answer plugin
 ### Build docker image with plugin from answer base image
 > You can follow the steps above to build the binary with the plugin first, and then build a docker image that contains the binary. Of course, you can also build directly on top of the original image.
 
-```dockerfile  title="Dockerfile"
+```dockerfile
 FROM apache/answer as answer-builder
 
 FROM golang:1.19-alpine AS golang-builder

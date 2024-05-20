@@ -16,7 +16,7 @@ If you already have an Answer instance, you can view the API document of your ow
 
 If you can't access the above link, please check the following configuration items whether they are configured correctly.
 
-```yaml title="/data/conf/config.yaml"
+```yaml
 swaggerui:
   show: true
   protocol: http
