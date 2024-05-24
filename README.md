@@ -29,5 +29,5 @@
 
 #### 编程语言
 
-- [ ] **R Markdown Cookbook**
-- [ ] **R Markdown Cookbook 中文版**
+- [ ] [**R Markdown Cookbook 英文版**](https://docs.devlive.org/books/rmarkdown-cookbook-en)
+- [ ] [**R Markdown Cookbook 中文版**](https://docs.devlive.org/books/rmarkdown-cookbook-zh)
