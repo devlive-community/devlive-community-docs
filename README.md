@@ -16,6 +16,7 @@
 - [x] [**Apache StreamPark 202405 中文版**](https://docs.devlive.org/books/apache-streampark-zh-202405)
 - [x] [**Apache Answer 202405 英文版**](https://docs.devlive.org/books/apache-answer-en-202405)
 - [x] [**Apache Answer 202405 中文版**](https://docs.devlive.org/books/apache-answer-zh-202405)
+- [x] [**Apache JDO 3.2.1 英文版**](https://docs.devlive.org/books/apache-jdo-en-202405)
 
 #### 工具&IDE
 
