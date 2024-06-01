@@ -33,4 +33,5 @@
 - [ ] [**R Markdown Cookbook 英文版**](https://docs.devlive.org/books/rmarkdown-cookbook-en)
 - [ ] [**R Markdown Cookbook 中文版**](https://docs.devlive.org/books/rmarkdown-cookbook-zh)
 - [x] [**Lodash 1.3.1**](https://docs.devlive.org/books/lodash-en-1.3.1)
+- [x] [**Lodash 2.4.2**](https://docs.devlive.org/books/lodash-en-2.4.2)
 - [x] [**Markdown 中文版**](https://docs.devlive.org/books/markdown-zh)
