@@ -1,0 +1,120 @@
+[TOC]
+
+The Country Map visualization allows you to plot lightweight choropleth maps of your countries by province, states, or other subdivision types. It does not rely on any third-party map services but would require you to provide the [ISO-3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) codes of your country's top-level subdivisions. Comparing to a province or state's full names, the ISO code is less ambiguous and is unique to all regions in the world.
+
+Included Maps[​](#included-maps "Direct link to Included Maps")
+---------------------------------------------------------------
+
+The current list of countries can be found in the src [legacy-plugin-chart-country-map/src/countries.ts](https://github.com/apache/superset/blob/master/superset-frontend/plugins/legacy-plugin-chart-country-map/src/countries.ts)
+
+The Country Maps visualization already ships with the maps for the following countries:
+
+*   Afghanistan
+*   Albania
+*   Algeria
+*   Argentina
+*   Australia
+*   Austria
+*   Belgium
+*   Bolivia
+*   Brazil
+*   Bulgaria
+*   Burundi
+*   Canada
+*   Chile
+*   China
+*   Colombia
+*   Costa Rica
+*   Cuba
+*   Cyprus
+*   Czech Republic
+*   Denmark
+*   Dominican Republic
+*   Ecuador
+*   Egypt
+*   El Salvador
+*   Estonia
+*   Ethiopia
+*   France
+*   France (regions)
+*   Finland
+*   Germany
+*   Guatemala
+*   Haiti
+*   Honduras
+*   Iceland
+*   India
+*   Indonesia
+*   Iran
+*   Italy
+*   Italy (regions)
+*   Japan
+*   Jordan
+*   Kazakhstan
+*   Kenya
+*   Korea
+*   Kuwait
+*   Kyrgyzstan
+*   Latvia
+*   Liechtenstein
+*   Lithuania
+*   Malaysia
+*   Mexico
+*   Morocco
+*   Myanmar
+*   Netherlands
+*   Nicaragua
+*   Nigeria
+*   Norway
+*   Oman
+*   Pakistan
+*   Panama
+*   Papua New Guinea
+*   Paraguay
+*   Peru
+*   Philippines
+*   Philippines (regions)
+*   Portugal
+*   Poland
+*   Puerto Rico
+*   Qatar
+*   Russia
+*   Rwanda
+*   Saint Barthelemy
+*   Saint Martin
+*   Saudi Arabia
+*   Singapore
+*   Slovenia
+*   Spain
+*   Sri Lanka
+*   Sweden
+*   Switzerland
+*   Syria
+*   Tajikistan
+*   Tanzania
+*   Thailand
+*   Timorleste
+*   Turkey
+*   Turkey (regions)
+*   Turkmenistan
+*   Uganda
+*   UK
+*   Ukraine
+*   United Arab Emirates
+*   Uruguay
+*   USA
+*   Uzbekistan
+*   Venezuela
+*   Vietnam
+*   Zambia
+
+Adding a New Country[​](#adding-a-new-country "Direct link to Adding a New Country")
+------------------------------------------------------------------------------------
+
+To add a new country to the list, you'd have to edit files in [@superset-ui/legacy-plugin-chart-country-map](https://github.com/apache/superset/tree/master/superset-frontend/plugins/legacy-plugin-chart-country-map).
+
+1.  Generate a new GeoJSON file for your country following the guide in [this Jupyter notebook](https://github.com/apache/superset/blob/master/superset-frontend/plugins/legacy-plugin-chart-country-map/scripts/Country%20Map%20GeoJSON%20Generator.ipynb).
+2.  Edit the countries list in [legacy-plugin-chart-country-map/src/countries.ts](https://github.com/apache/superset/blob/master/superset-frontend/plugins/legacy-plugin-chart-country-map/src/countries.ts).
+3.  Install superset-frontend dependencies: `cd superset-frontend && npm install`
+4.  Verify your countries in Superset plugins storybook: `npm run plugins:storybook`.
+5.  Build and install Superset from source code.
