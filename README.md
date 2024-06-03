@@ -18,13 +18,14 @@
 - [x] [**Apache Answer 202405 中文版**](https://docs.devlive.org/books/apache-answer-zh-202405)
 - [x] [**Apache JDO 3.2.1 英文版**](https://docs.devlive.org/books/apache-jdo-en-202405)
 - [x] [**Apache Superset 4.0.1**](https://docs.devlive.org/books/apache-superset-en-20240427)
-- [ ] [**Apache Kyuubi 1.3.1-incubating**](https://docs.devlive.org/books/apache-kyuubi-en-1.3.1-incubating)
+- [x] [**Apache Kyuubi 1.3.1-incubating**](https://docs.devlive.org/books/apache-kyuubi-en-1.3.1-incubating)
 
 #### 工具&IDE
 
 - [x] [**GitHub Cli**](https://docs.devlive.org/books/github-cli-en)
 - [x] [**GitHub Cli 中文版**](https://docs.devlive.org/books/github-cli-zh)
 - [x] [**夜莺 Nightingale V5 中文版**](https://docs.devlive.org/books/nightingale-zh-v5)
+- [ ] [**Docusaurus 1.14.7**](https://docs.devlive.org/books/docusaurus-en-1.14.7)
 
 #### 数据库&数据存储
 
