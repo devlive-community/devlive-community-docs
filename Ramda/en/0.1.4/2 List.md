@@ -7,7 +7,7 @@
 `(a → Boolean) → [a] → Boolean`
 
 Parameters
-
+  
 * **fnThe** predicate function.
 * **listThe** array to consider.
 
@@ -1024,31 +1024,4 @@ R.slice(1, Infinity, ['a', 'b', 'c', 'd']); //=> ['b', 'c', 'd']
 R.slice(0, -1, ['a', 'b', 'c', 'd']);       //=> ['a', 'b', 'c']
 R.slice(-3, -1, ['a', 'b', 'c', 'd']);      //=> ['b', 'c']
 R.slice(0, 3, 'ramda');                     //=> 'ram'
-```
-
-### uniqWith
-
----
-
-`((a, a) → Boolean) → [a] → [a]`
-
-Parameters
-
-*   predA predicate used to test whether two items are equal.
-*   listThe array to consider.
-
-> Returns Array The list of unique items.
-
-Added in v0.2.0
-
-Returns a new list containing only one copy of each element in the original list, based upon the value returned by applying the supplied predicate to two list elements. Prefers the first item if two items compare equal based on the predicate.
-
-Acts as a transducer if a transformer is given in list position.
-
-```js
-const strEq = R.eqBy(String);
-R.uniqWith(strEq)([1, '1', 2, 1]); //=> [1, 2]
-R.uniqWith(strEq)([{}, {}]);       //=> [{}]
-R.uniqWith(strEq)([1, '1', 1]);    //=> [1]
-R.uniqWith(strEq)(['1', 1, 1]);    //=> ['1']
 ```

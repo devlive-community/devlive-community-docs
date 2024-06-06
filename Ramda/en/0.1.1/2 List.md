@@ -7,7 +7,7 @@
 `(a → Boolean) → [a] → Boolean`
 
 Parameters
-
+  
 * **fnThe** predicate function.
 * **listThe** array to consider.
 
@@ -945,110 +945,4 @@ See also [transduce](#transduce), [indexOf](#indexOf).
 const xs = [{a: 1}, {a: 2}, {a: 3}];
 R.findIndex(R.propEq(2, 'a'))(xs); //=> 1
 R.findIndex(R.propEq(4, 'a'))(xs); //=> -1
-```
-
-### last
-
----
-
-`[a] → a | Undefined`
-
-`String → String | Undefined`
-
-Added in v0.1.4
-
-Returns the last element of the given list or string.
-
-See also [init](#init), [head](#head), [tail](#tail).
-
-```js
-R.last(['fi', 'fo', 'fum']); //=> 'fum'
-R.last([]); //=> undefined
-
-R.last('abc'); //=> 'c'
-R.last(''); //=> undefined
-```
-
-### partition
-
----
-
-`Filterable f => (a → Boolean) → f a → [f a, f a]`
-
-Parameters
-
-*   predA predicate to determine which side the element belongs to.
-*   filterablethe list (or other filterable) to partition.
-
-> Returns Array An array, containing first the subset of elements that satisfy the predicate, and second the subset of elements that do not satisfy.
-
-Added in v0.1.4
-
-Takes a predicate and a list or other `Filterable` object and returns the pair of filterable objects of the same type of elements which do and do not satisfy, the predicate, respectively. Filterable objects include plain objects or any object that has a filter method such as `Array`.
-
-See also [filter](#filter), [reject](#reject).
-
-```js
-R.partition(R.includes('s'), ['sss', 'ttt', 'foo', 'bars']);
-// => [ [ 'sss', 'bars' ],  [ 'ttt', 'foo' ] ]
-
-R.partition(R.includes('s'), { a: 'sss', b: 'ttt', foo: 'bars' });
-// => [ { a: 'sss', foo: 'bars' }, { b: 'ttt' }  ]
-```
-
-### slice
-
----
-
-`Number → Number → [a] → [a]`
-
-`Number → Number → String → String`
-
-Parameters
-
-*   fromIndexThe start index (inclusive).
-*   toIndexThe end index (exclusive).
-*   list
-
-> Returns *
-
-Added in v0.1.4
-
-Returns the elements of the given list or string (or object with a `slice` method) from `fromIndex` (inclusive) to `toIndex` (exclusive).
-
-Dispatches to the `slice` method of the third argument, if present.
-
-```js
-R.slice(1, 3, ['a', 'b', 'c', 'd']);        //=> ['b', 'c']
-R.slice(1, Infinity, ['a', 'b', 'c', 'd']); //=> ['b', 'c', 'd']
-R.slice(0, -1, ['a', 'b', 'c', 'd']);       //=> ['a', 'b', 'c']
-R.slice(-3, -1, ['a', 'b', 'c', 'd']);      //=> ['b', 'c']
-R.slice(0, 3, 'ramda');                     //=> 'ram'
-```
-
-### uniqWith
-
----
-
-`((a, a) → Boolean) → [a] → [a]`
-
-Parameters
-
-*   predA predicate used to test whether two items are equal.
-*   listThe array to consider.
-
-> Returns Array The list of unique items.
-
-Added in v0.2.0
-
-Returns a new list containing only one copy of each element in the original list, based upon the value returned by applying the supplied predicate to two list elements. Prefers the first item if two items compare equal based on the predicate.
-
-Acts as a transducer if a transformer is given in list position.
-
-```js
-const strEq = R.eqBy(String);
-R.uniqWith(strEq)([1, '1', 2, 1]); //=> [1, 2]
-R.uniqWith(strEq)([{}, {}]);       //=> [{}]
-R.uniqWith(strEq)([1, '1', 1]);    //=> [1]
-R.uniqWith(strEq)(['1', 1, 1]);    //=> ['1']
 ```

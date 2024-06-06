@@ -148,6 +148,36 @@ See also [reduce](#reduce).
 R.sum([2,4,6,8,100,1]); //=> 121
 ```
 
+### modulo
+
+---
+
+`Number → Number → Number`
+
+Parameters
+
+*   aThe value to the divide.
+*   bThe pseudo-modulus
+
+> Returns Number The result of `b % a`.
+
+Added in v0.1.1
+
+Divides the first parameter by the second and returns the remainder. Note that this function preserves the JavaScript-style behavior for modulo. For mathematical modulo see [`mathMod`](#mathMod).
+
+See also [mathMod](#mathMod).
+
+```js
+R.modulo(17, 3); //=> 2
+// JS behavior:
+R.modulo(-17, 3); //=> -2
+R.modulo(17, -3); //=> 2
+
+const isOdd = R.modulo(R.__, 2);
+isOdd(42); //=> 0
+isOdd(21); //=> 1
+```
+
 ### mathMod
 
 ---

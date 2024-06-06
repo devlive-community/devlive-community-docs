@@ -248,43 +248,6 @@ const fullName = R.compose(R.join(' '), R.props(['first', 'last']));
 fullName({last: 'Bullet-Tooth', age: 33, first: 'Tony'}); //=> 'Tony Bullet-Tooth'
 ```
 
-### where
-
----
-
-`{String: (* → Boolean)} → {String: *} → Boolean`
-
-Parameters
-
-*   spec
-*   testObj
-
-> Returns Boolean
-
-Added in v0.1.1
-
-Takes a spec object and a test object; returns true if the test satisfies the spec. Each of the spec's own properties must be a predicate function. Each predicate is applied to the value of the corresponding property of the test object. `where` returns true if all the predicates return true, false otherwise.
-
-`where` is well suited to declaratively expressing constraints for other functions such as [`filter`](#filter) and [`find`](#find).
-
-See also [propSatisfies](#propSatisfies), [whereEq](#whereEq).
-
-```js
-// pred :: Object -> Boolean
-const pred = R.where({
-  a: R.equals('foo'),
-  b: R.complement(R.equals('bar')),
-  x: R.gt(R.__, 10),
-  y: R.lt(R.__, 20)
-});
-
-pred({a: 'foo', b: 'xxx', x: 11, y: 19}); //=> true
-pred({a: 'xxx', b: 'xxx', x: 11, y: 19}); //=> false
-pred({a: 'foo', b: 'bar', x: 11, y: 19}); //=> false
-pred({a: 'foo', b: 'xxx', x: 10, y: 19}); //=> false
-pred({a: 'foo', b: 'xxx', x: 11, y: 20}); //=> false
-```
-
 ### keysIn
 
 ---
@@ -365,4 +328,49 @@ const F = function() { this.x = 'X'; };
 F.prototype.y = 'Y';
 const f = new F();
 R.valuesIn(f); //=> ['X', 'Y']
+```
+
+### toPairs
+
+---
+
+`{String: *} → [[String,*]]`
+
+Parameters
+
+*   objThe object to extract from
+
+> Returns Array An array of key, value arrays from the object's own properties.
+
+Added in v0.4.0
+
+Converts an object into an array of key, value arrays. Only the object's own properties are used. Note that the order of the output array is not guaranteed to be consistent across different JS platforms.
+
+See also [fromPairs](#fromPairs), [keys](#keys), [values](#values).
+
+```js
+R.toPairs({a: 1, b: 2, c: 3}); //=> [['a', 1], ['b', 2], ['c', 3]]
+```
+
+### toPairsIn
+
+---
+
+`{String: *} → [[String,*]]`
+
+Parameters
+
+*   objThe object to extract from
+
+> Returns Array An array of key, value arrays from the object's own and prototype properties.
+
+Added in v0.4.0
+
+Converts an object into an array of key, value arrays. The object's own properties and prototype properties are used. Note that the order of the output array is not guaranteed to be consistent across different JS platforms.
+
+```js
+const F = function() { this.x = 'X'; };
+F.prototype.y = 'Y';
+const f = new F();
+R.toPairsIn(f); //=> [['x','X'], ['y','Y']]
 ```

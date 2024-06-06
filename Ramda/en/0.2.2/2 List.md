@@ -1052,3 +1052,49 @@ R.uniqWith(strEq)([{}, {}]);       //=> [{}]
 R.uniqWith(strEq)([1, '1', 1]);    //=> [1]
 R.uniqWith(strEq)(['1', 1, 1]);    //=> ['1']
 ```
+
+### insert
+
+---
+
+`Number → a → [a] → [a]`
+
+Parameters
+
+*   indexThe position to insert the element
+*   eltThe element to insert into the Array
+*   listThe list to insert into
+
+> Returns Array A new Array with `elt` inserted at `index`.
+
+Added in v0.2.2
+
+Inserts the supplied element into the list, at the specified `index`. _Note that this is not destructive_: it returns a copy of the list with the changes. No lists have been harmed in the application of this function.
+
+```js
+R.insert(2, 'x', [1,2,3,4]); //=> [1,2,'x',3,4]
+```
+
+### remove
+
+---
+
+`Number → Number → [a] → [a]`
+
+Parameters
+
+*   startThe position to start removing elements
+*   countThe number of elements to remove
+*   listThe list to remove from
+
+> Returns Array A new Array with `count` elements from `start` removed.
+
+Added in v0.2.2
+
+Removes the sub-list of `list` starting at index `start` and containing `count` elements. _Note that this is not destructive_: it returns a copy of the list with the changes. No lists have been harmed in the application of this function.
+
+See also [without](#without).
+
+```js
+R.remove(2, 3, [1,2,3,4,5,6,7,8]); //=> [1,2,6,7,8]
+```

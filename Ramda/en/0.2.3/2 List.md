@@ -1052,3 +1052,74 @@ R.uniqWith(strEq)([{}, {}]);       //=> [{}]
 R.uniqWith(strEq)([1, '1', 1]);    //=> [1]
 R.uniqWith(strEq)(['1', 1, 1]);    //=> ['1']
 ```
+
+### insert
+
+---
+
+`Number → a → [a] → [a]`
+
+Parameters
+
+*   indexThe position to insert the element
+*   eltThe element to insert into the Array
+*   listThe list to insert into
+
+> Returns Array A new Array with `elt` inserted at `index`.
+
+Added in v0.2.2
+
+Inserts the supplied element into the list, at the specified `index`. _Note that this is not destructive_: it returns a copy of the list with the changes. No lists have been harmed in the application of this function.
+
+```js
+R.insert(2, 'x', [1,2,3,4]); //=> [1,2,'x',3,4]
+```
+
+### remove
+
+---
+
+`Number → Number → [a] → [a]`
+
+Parameters
+
+*   startThe position to start removing elements
+*   countThe number of elements to remove
+*   listThe list to remove from
+
+> Returns Array A new Array with `count` elements from `start` removed.
+
+Added in v0.2.2
+
+Removes the sub-list of `list` starting at index `start` and containing `count` elements. _Note that this is not destructive_: it returns a copy of the list with the changes. No lists have been harmed in the application of this function.
+
+See also [without](#without).
+
+```js
+R.remove(2, 3, [1,2,3,4,5,6,7,8]); //=> [1,2,6,7,8]
+```
+
+### times
+
+---
+
+`(Number → a) → Number → [a]`
+
+Parameters
+
+*   fnThe function to invoke. Passed one argument, the current value of `n`.
+*   nA value between `0` and `n - 1`. Increments after each function call.
+
+> Returns Array An array containing the return values of all calls to `fn`.
+
+Added in v0.2.3
+
+Calls an input function `n` times, returning an array containing the results of those function calls.
+
+`fn` is passed one argument: The current value of `n`, which begins at `0` and is gradually incremented to `n - 1`.
+
+See also [repeat](#repeat).
+
+```js
+R.times(R.identity, 5); //=> [0, 1, 2, 3, 4]
+```
