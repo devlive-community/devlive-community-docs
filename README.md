@@ -40,6 +40,7 @@
 - [x] [**Markdown 中文版**](https://docs.devlive.org/books/markdown-zh)
 - [x] [**Ramda 0.1.0**](https://docs.devlive.org/books/ramda-en-0.1.0)
 - [x] [**Ramda 0.1.1**](https://docs.devlive.org/books/ramda-en-0.1.1)
+- [x] [**Ramda 0.1.4**](https://docs.devlive.org/books/ramda-en-0.1.4)
 - [x] [**Ramda 0.2.0**](https://docs.devlive.org/books/ramda-en-0.2.0)
 - [x] [**Ramda 0.3.0**](https://docs.devlive.org/books/ramda-en-0.3.0)
 - [x] [**Ramda 0.4.0**](https://docs.devlive.org/books/ramda-en-0.4.0)
