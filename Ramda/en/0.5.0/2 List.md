@@ -7,7 +7,7 @@
 `(a → Boolean) → [a] → Boolean`
 
 Parameters
-  
+
 * **fnThe** predicate function.
 * **listThe** array to consider.
 
@@ -804,6 +804,228 @@ R.takeWhile(isNotFour, [1, 2, 3, 4, 3, 2, 1]); //=> [1, 2, 3]
 R.takeWhile(x => x !== 'd' , 'Ramda'); //=> 'Ram'
 ```
 
+### findLast
+
+---
+
+`(a → Boolean) → [a] → a | undefined`
+
+Parameters
+
+*   fnThe predicate function used to determine if the element is the desired one.
+*   listThe array to consider.
+
+> Returns Object The element found, or `undefined`.
+
+Added in v0.1.1
+
+Returns the last element of the list which matches the predicate, or `undefined` if no element matches.
+
+Acts as a transducer if a transformer is given in list position.
+
+See also [transduce](#transduce).
+
+```js
+const xs = [{a: 1, b: 0}, {a:1, b: 1}];
+R.findLast(R.propEq(1, 'a'))(xs); //=> {a: 1, b: 1}
+R.findLast(R.propEq(4, 'a'))(xs); //=> undefined
+```
+
+### findLastIndex
+
+---
+
+`(a → Boolean) → [a] → Number`
+
+Parameters
+
+*   fnThe predicate function used to determine if the element is the desired one.
+*   listThe array to consider.
+
+> Returns Number The index of the element found, or `-1`.
+
+Added in v0.1.1
+
+Returns the index of the last element of the list which matches the predicate, or `-1` if no element matches.
+
+Acts as a transducer if a transformer is given in list position.
+
+See also [transduce](#transduce), [lastIndexOf](#lastIndexOf).
+
+```js
+const xs = [{a: 1, b: 0}, {a:1, b: 1}];
+R.findLastIndex(R.propEq(1, 'a'))(xs); //=> 1
+R.findLastIndex(R.propEq(4, 'a'))(xs); //=> -1
+```
+
+### forEach
+
+---
+
+`(a → *) → [a] → [a]`
+
+Parameters
+
+*   fnThe function to invoke. Receives one argument, `value`.
+*   listThe list to iterate over.
+
+> Returns Array The original list.
+
+Added in v0.1.1
+
+Iterate over an input `list`, calling a provided function `fn` for each element in the list.
+
+`fn` receives one argument: _(value)_.
+
+Note: `R.forEach` does not skip deleted or unassigned indices (sparse arrays), unlike the native `Array.prototype.forEach` method. For more details on this behavior, see: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/forEach#Description](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach#Description)
+
+Also note that, unlike `Array.prototype.forEach`, Ramda's `forEach` returns the original array. In some libraries this function is named `each`.
+
+Dispatches to the `forEach` method of the second argument, if present.
+
+See also [addIndex](#addIndex).
+
+```js
+const printXPlusFive = x => console.log(x + 5);
+R.forEach(printXPlusFive, [1, 2, 3]); //=> [1, 2, 3]
+// logs 6
+// logs 7
+// logs 8
+```
+
+### repeat
+
+---
+
+`a → n → [a]`
+
+Parameters
+
+*   valueThe value to repeat.
+*   nThe desired size of the output list.
+
+> Returns Array A new array containing `n` `value`s.
+
+Added in v0.1.1
+
+Returns a fixed list of size `n` containing a specified identical value.
+
+See also [times](#times).
+
+```js
+R.repeat('hi', 5); //=> ['hi', 'hi', 'hi', 'hi', 'hi']
+    
+const obj = {};
+const repeatedObjs = R.repeat(obj, 5); //=> [{}, {}, {}, {}, {}]
+repeatedObjs[0] === repeatedObjs[1]; //=> true
+```
+
+### findIndex
+
+---
+
+`(a → Boolean) → [a] → Number`
+
+Parameters
+
+*   fnThe predicate function used to determine if the element is the desired one.
+*   listThe array to consider.
+
+> Returns Number The index of the element found, or `-1`.
+
+Added in v0.1.1
+
+Returns the index of the first element of the list which matches the predicate, or `-1` if no element matches.
+
+Acts as a transducer if a transformer is given in list position.
+
+See also [transduce](#transduce), [indexOf](#indexOf).
+
+```js
+const xs = [{a: 1}, {a: 2}, {a: 3}];
+R.findIndex(R.propEq(2, 'a'))(xs); //=> 1
+R.findIndex(R.propEq(4, 'a'))(xs); //=> -1
+```
+
+### last
+
+---
+
+`[a] → a | Undefined`
+
+`String → String | Undefined`
+
+Added in v0.1.4
+
+Returns the last element of the given list or string.
+
+See also [init](#init), [head](#head), [tail](#tail).
+
+```js
+R.last(['fi', 'fo', 'fum']); //=> 'fum'
+R.last([]); //=> undefined
+
+R.last('abc'); //=> 'c'
+R.last(''); //=> undefined
+```
+
+### partition
+
+---
+
+`Filterable f => (a → Boolean) → f a → [f a, f a]`
+
+Parameters
+
+*   predA predicate to determine which side the element belongs to.
+*   filterablethe list (or other filterable) to partition.
+
+> Returns Array An array, containing first the subset of elements that satisfy the predicate, and second the subset of elements that do not satisfy.
+
+Added in v0.1.4
+
+Takes a predicate and a list or other `Filterable` object and returns the pair of filterable objects of the same type of elements which do and do not satisfy, the predicate, respectively. Filterable objects include plain objects or any object that has a filter method such as `Array`.
+
+See also [filter](#filter), [reject](#reject).
+
+```js
+R.partition(R.includes('s'), ['sss', 'ttt', 'foo', 'bars']);
+// => [ [ 'sss', 'bars' ],  [ 'ttt', 'foo' ] ]
+
+R.partition(R.includes('s'), { a: 'sss', b: 'ttt', foo: 'bars' });
+// => [ { a: 'sss', foo: 'bars' }, { b: 'ttt' }  ]
+```
+
+### slice
+
+---
+
+`Number → Number → [a] → [a]`
+
+`Number → Number → String → String`
+
+Parameters
+
+*   fromIndexThe start index (inclusive).
+*   toIndexThe end index (exclusive).
+*   list
+
+> Returns *
+
+Added in v0.1.4
+
+Returns the elements of the given list or string (or object with a `slice` method) from `fromIndex` (inclusive) to `toIndex` (exclusive).
+
+Dispatches to the `slice` method of the third argument, if present.
+
+```js
+R.slice(1, 3, ['a', 'b', 'c', 'd']);        //=> ['b', 'c']
+R.slice(1, Infinity, ['a', 'b', 'c', 'd']); //=> ['b', 'c', 'd']
+R.slice(0, -1, ['a', 'b', 'c', 'd']);       //=> ['a', 'b', 'c']
+R.slice(-3, -1, ['a', 'b', 'c', 'd']);      //=> ['b', 'c']
+R.slice(0, 3, 'ramda');                     //=> 'ram'
+```
+
 ### uniqWith
 
 ---
@@ -829,6 +1051,77 @@ R.uniqWith(strEq)([1, '1', 2, 1]); //=> [1, 2]
 R.uniqWith(strEq)([{}, {}]);       //=> [{}]
 R.uniqWith(strEq)([1, '1', 1]);    //=> [1]
 R.uniqWith(strEq)(['1', 1, 1]);    //=> ['1']
+```
+
+### insert
+
+---
+
+`Number → a → [a] → [a]`
+
+Parameters
+
+*   indexThe position to insert the element
+*   eltThe element to insert into the Array
+*   listThe list to insert into
+
+> Returns Array A new Array with `elt` inserted at `index`.
+
+Added in v0.2.2
+
+Inserts the supplied element into the list, at the specified `index`. _Note that this is not destructive_: it returns a copy of the list with the changes. No lists have been harmed in the application of this function.
+
+```js
+R.insert(2, 'x', [1,2,3,4]); //=> [1,2,'x',3,4]
+```
+
+### remove
+
+---
+
+`Number → Number → [a] → [a]`
+
+Parameters
+
+*   startThe position to start removing elements
+*   countThe number of elements to remove
+*   listThe list to remove from
+
+> Returns Array A new Array with `count` elements from `start` removed.
+
+Added in v0.2.2
+
+Removes the sub-list of `list` starting at index `start` and containing `count` elements. _Note that this is not destructive_: it returns a copy of the list with the changes. No lists have been harmed in the application of this function.
+
+See also [without](#without).
+
+```js
+R.remove(2, 3, [1,2,3,4,5,6,7,8]); //=> [1,2,6,7,8]
+```
+
+### times
+
+---
+
+`(Number → a) → Number → [a]`
+
+Parameters
+
+*   fnThe function to invoke. Passed one argument, the current value of `n`.
+*   nA value between `0` and `n - 1`. Increments after each function call.
+
+> Returns Array An array containing the return values of all calls to `fn`.
+
+Added in v0.2.3
+
+Calls an input function `n` times, returning an array containing the results of those function calls.
+
+`fn` is passed one argument: The current value of `n`, which begins at `0` and is gradually incremented to `n - 1`.
+
+See also [repeat](#repeat).
+
+```js
+R.times(R.identity, 5); //=> [0, 1, 2, 3, 4]
 ```
 
 ### chain

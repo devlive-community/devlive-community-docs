@@ -599,6 +599,33 @@ console.log(salad.recipe());
 // Add a dollop of Ketchup
 ```
 
+### converge
+
+---
+
+`((x1, x2, …) → z) → [((a, b, …) → x1), ((a, b, …) → x2), …] → (a → b → … → z)`
+
+Parameters
+
+*   afterA function. `after` will be invoked with the return values of `fn1` and `fn2` as its arguments.
+*   functionsA list of functions.
+
+> Returns function A new function.
+
+Added in v0.4.2
+
+Accepts a converging function and a list of branching functions and returns a new function. The arity of the new function is the same as the arity of the longest branching function. When invoked, this new function is applied to some arguments, and each branching function is applied to those same arguments. The results of each branching function are passed as arguments to the converging function to produce the return value.
+
+See also [useWith](#useWith).
+
+```js
+const average = R.converge(R.divide, [R.sum, R.length])
+average([1, 2, 3, 4, 5, 6, 7]) //=> 4
+
+const strangeConcat = R.converge(R.concat, [R.toUpper, R.toLower])
+strangeConcat("Yodel") //=> "YODELyodel"
+```
+
 ### curryN
 
 ---
