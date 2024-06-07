@@ -38,6 +38,7 @@
 - [x] [**Lodash 1.3.1**](https://docs.devlive.org/books/lodash-en-1.3.1)
 - [x] [**Lodash 2.4.2**](https://docs.devlive.org/books/lodash-en-2.4.2)
 - [x] [**Markdown 中文版**](https://docs.devlive.org/books/markdown-zh)
+- [x] [**Underscore.js 1.13.6**](https://docs.devlive.org/books/underscore.js-en-1.13.6)
 - [x] [**Ramda 0.1.0**](https://docs.devlive.org/books/ramda-en-0.1.0)
 - [x] [**Ramda 0.1.1**](https://docs.devlive.org/books/ramda-en-0.1.1)
 - [x] [**Ramda 0.1.4**](https://docs.devlive.org/books/ramda-en-0.1.4)
