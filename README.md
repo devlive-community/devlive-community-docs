@@ -51,3 +51,4 @@
 - [x] [**Ramda 0.5.0**](https://docs.devlive.org/books/ramda-en-0.5.0)
 - [x] [**Ramda 0.6.0**](https://docs.devlive.org/books/ramda-en-0.6.0)
 - [x] [**Ramda 0.7.0**](https://docs.devlive.org/books/ramda-en-0.7.0)
+- [x] [**Ramda 0.8.0**](https://docs.devlive.org/books/ramda-en-0.8.0)
