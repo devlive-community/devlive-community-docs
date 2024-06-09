@@ -1583,3 +1583,126 @@ const firstOddTransducer = R.compose(R.filter(isOdd), R.take(1));
 R.transduce(firstOddTransducer, R.flip(R.append), [], R.range(0, 100)); //=> [1]
 ```
 
+### adjust
+
+---
+
+`Number → (a → a) → [a] → [a]`
+
+Parameters
+
+*   idxThe index.
+*   fnThe function to apply.
+*   listAn array-like object whose value at the supplied index will be replaced.
+    
+> Returns Array A copy of the supplied array-like object with the element at index `idx` replaced with the value returned by applying `fn` to the existing element.
+
+Added in v0.14.0
+
+Applies a function to the value at the given index of an array, returning a new copy of the array with the element at the given index replaced with the result of the function application.
+
+See also [update](#update).
+
+```js
+R.adjust(1, R.toUpper, ['a', 'b', 'c', 'd']);      //=> ['a', 'B', 'c', 'd']
+R.adjust(-1, R.toUpper, ['a', 'b', 'c', 'd']);     //=> ['a', 'b', 'c', 'D']
+```
+
+### dropRepeats
+
+---
+
+`[a] → [a]`
+
+Parameters
+
+*   listThe array to consider.
+
+> Returns Array `list` without repeating elements.
+
+Added in v0.14.0
+
+Returns a new list without any consecutively repeating elements. [`R.equals`](#equals) is used to determine equality.
+
+Acts as a transducer if a transformer is given in list position.
+
+See also [transduce](#transduce).
+
+```js
+R.dropRepeats([1, 1, 1, 2, 3, 4, 4, 2, 2]); //=> [1, 2, 3, 4, 2]
+```
+
+### dropRepeatsWith
+
+---
+
+`((a, a) → Boolean) → [a] → [a]`
+
+Parameters
+
+*   predA predicate used to test whether two items are equal.
+*   listThe array to consider.
+
+> Returns Array `list` without repeating elements.
+
+Added in v0.14.0
+
+Returns a new list without any consecutively repeating elements. Equality is determined by applying the supplied predicate to each pair of consecutive elements. The first element in a series of equal elements will be preserved.
+
+Acts as a transducer if a transformer is given in list position.
+
+See also [transduce](#transduce).
+
+```js
+const l = [1, -1, 1, 3, 4, -4, -4, -5, 5, 3, 3];
+R.dropRepeatsWith(R.eqBy(Math.abs), l); //=> [1, 3, 4, -5, 3]
+```
+
+### intersperse
+
+---
+
+`a → [a] → [a]`
+
+Parameters
+
+*   separatorThe element to add to the list.
+*   listThe list to be interposed.
+
+> Returns Array The new list.
+
+Added in v0.14.0
+
+Creates a new list with the separator interposed between elements.
+
+Dispatches to the `intersperse` method of the second argument, if present.
+
+```js
+R.intersperse('a', ['b', 'n', 'n', 's']); //=> ['b', 'a', 'n', 'a', 'n', 'a', 's']
+```
+
+### update
+
+---
+
+`Number → a → [a] → [a]`
+
+Parameters
+
+*   idxThe index to update.
+*   xThe value to exist at the given index of the returned array.
+*   listThe source array-like object to be updated.
+
+> Returns Array A copy of `list` with the value at index `idx` replaced with `x`.
+
+Added in v0.14.0
+
+Returns a new copy of the array with the element at the provided index replaced with the given value.
+
+See also [adjust](#adjust).
+
+```js
+R.update(1, '_', ['a', 'b', 'c']);      //=> ['a', '_', 'c']
+R.update(-1, '_', ['a', 'b', 'c']);     //=> ['a', 'b', '_']
+```
+
