@@ -74,3 +74,4 @@
 - [x] [**Ramda 0.1.4**](https://docs.devlive.org/books/ramda-en-0.1.4)
 - [x] [**Ramda 0.1.1**](https://docs.devlive.org/books/ramda-en-0.1.1)
 - [x] [**Ramda 0.1.0**](https://docs.devlive.org/books/ramda-en-0.1.0)
+- [x] [**SpotBugs 4.8.5**](https://docs.devlive.org/books/spotbugs-en-4.8.5)
