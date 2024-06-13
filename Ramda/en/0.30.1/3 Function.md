@@ -1515,5 +1515,73 @@ const fullName = R.flow(personObj, [R.values, R.join(' ')]); //=> "Jane Doe"
 const givenName = R.flow('    ', [R.trim, R.when(R.isEmpty, R.always(fullName))]); //=> "Jane Doe"
 ```
 
+### ascendNatural
+
+---
+
+`Ord b => s → (a → b) → a → a → Number`
+
+Parameters
+
+*   localesA string with a BCP 47 language tag, or an array of such strings. Corresponds to the locales parameter of the Intl.Collator() constructor.
+*   fnA function of arity one that returns a value that can be compared
+*   aThe first item to be compared.
+*   bThe second item to be compared.
+
+> Returns Number `-1` if a occurs before b, `1` if a occurs after b, otherwise `0`
+
+Added in v0.30.1
+
+Makes an ascending comparator function out of a function that returns a value that can be compared with natural sorting using localeCompare.
+
+See also [ascend](#ascend).
+
+```js
+const unsorted = ['3', '1', '10', 'Ørjan', 'Bob', 'Älva'];
+
+R.sort(R.ascendNatural('en', R.identity), unsorted);
+// => ['1', '3', '10', 'Älva', 'Bob', 'Ørjan']
+
+R.sort(R.ascendNatural('sv', R.identity), unsorted);
+// => ['1', '3', '10', 'Bob', 'Älva', 'Ørjan']
+
+    R.sort(R.ascend(R.identity), unsorted);
+// => ['1', '10', '3', 'Bob', 'Älva', 'Ørjan']
+```
+
+### descendNatural
+
+---
+
+`Ord b => s → (a → b) → a → a → Number`
+
+Parameters
+
+*   localesA string with a BCP 47 language tag, or an array of such strings. Corresponds to the locales parameter of the Intl.Collator() constructor.
+*   fnA function of arity one that returns a value that can be compared
+*   aThe first item to be compared.
+*   bThe second item to be compared.
+
+> Returns Number `-1` if a occurs after b, `1` if a occurs before b, otherwise `0`
+
+Added in v0.30.1
+
+Makes a descending comparator function out of a function that returns a value that can be compared with natural sorting using localeCompare.
+
+See also [descend](#descend).
+
+```js
+const unsorted = ['3', '1', '10', 'Ørjan', 'Bob', 'Älva'];
+
+R.sort(R.descendNatural('en', R.identity), unsorted);
+// => ['Ørjan', 'Bob', 'Älva', '10', '3', '1']
+
+R.sort(R.descendNatural('sv', R.identity), unsorted);
+// => ['Ørjan', 'Älva', 'Bob', '10', '3', '1']
+
+    R.sort(R.descend(R.identity), unsorted);
+// => ['Ørjan', 'Älva', 'Bob', '3', '10', '1']
+```
+
 
 
