@@ -25,7 +25,7 @@
 - [x] [**GitHub Cli**](https://docs.devlive.org/books/github-cli-en)
 - [x] [**GitHub Cli 中文版**](https://docs.devlive.org/books/github-cli-zh)
 - [x] [**夜莺 Nightingale V5 中文版**](https://docs.devlive.org/books/nightingale-zh-v5)
-- [ ] [**Docusaurus 1.14.7**](https://docs.devlive.org/books/docusaurus-en-1.14.7)
+- [x] [**Docusaurus 1.14.7**](https://docs.devlive.org/books/docusaurus-en-1.14.7)
 
 #### 数据库&数据存储
 
@@ -76,3 +76,4 @@
 - [x] [**Ramda 0.1.1**](https://docs.devlive.org/books/ramda-en-0.1.1)
 - [x] [**Ramda 0.1.0**](https://docs.devlive.org/books/ramda-en-0.1.0)
 - [x] [**SpotBugs 4.8.5**](https://docs.devlive.org/books/spotbugs-en-4.8.5)
+- [x] [**Coolify**](https://docs.devlive.org/books/coolify-en)
