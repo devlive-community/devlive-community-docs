@@ -19,6 +19,7 @@
 - [x] [**Apache JDO 3.2.1 英文版**](https://docs.devlive.org/books/apache-jdo-en-202405)
 - [x] [**Apache Superset 4.0.1**](https://docs.devlive.org/books/apache-superset-en-20240427)
 - [x] [**Apache Kyuubi 1.3.1-incubating**](https://docs.devlive.org/books/apache-kyuubi-en-1.3.1-incubating)
+- [x] [**Apache Seatunnel 2.3.5**](https://docs.devlive.org/books/apache-seatunnel-en-2.3.5)
 
 #### 工具&IDE
 
