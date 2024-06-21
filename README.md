@@ -31,6 +31,7 @@
 #### 数据库&数据存储
 
 - [ ] **ClickHouse Doc**
+- [x] [**Redisson**](https://docs.devlive.org/books/redisson-en-202406)
 
 #### 编程语言
 
