@@ -25,11 +25,11 @@ tblproperties(
   'table.watermark-allowed-lateness-second' = '60');
 ```
 
-Currently, terminal uses Spark Engine for SQL execution. For more information on the syntax of creating tables, refer to [Spark DDL]($Spark-DDL/#create-table). Different Catalogs create different table formats, refer to [Create Catalog]($Managing-Catalogs/#create-catalog)
+Currently, terminal uses Spark Engine for SQL execution. For more information on the syntax of creating tables, refer to [Spark DDL]($Spark-DDL#create-table). Different Catalogs create different table formats, refer to [Create Catalog]($Managing-Catalogs#create-catalog)
 
 ### Configure LogStore
 As described in [Mixed-Iceberg format]($Mixed-Iceberg), Mixed-Iceberg format may consist of several components, and BaseStore and ChangeStore will be automatically created upon table creation.
-LogStore, as an optional component, requires separate configuration to specify, The complete configuration for LogStore can be found in [LogStore Configuration]($Configurations/#logstore-configurations).
+LogStore, as an optional component, requires separate configuration to specify, The complete configuration for LogStore can be found in [LogStore Configuration]($Configurations#logstore-configurations).
 
 In the example above, the Kafka cluster 127.0.0.1:9092 and the topic local_catalog.test_db.test_log_store.log_store are used as the LogStore for the new table.
 Before executing the above statement, you need to manually create the corresponding topic in the Kafka cluster or enable the automatic creation of topics feature for the cluster.
