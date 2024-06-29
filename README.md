@@ -30,15 +30,27 @@
 - [ ] [**R Markdown Cookbook 英文版**](https://docs.devlive.org/books/rmarkdown-cookbook-en)
 - [ ] [**R Markdown Cookbook 中文版**](https://docs.devlive.org/books/rmarkdown-cookbook-zh)
 
-| [**Lodash 3.10.1**](https://docs.devlive.org/books/lodash-en-3.10.1)               | [**Lodash 2.4.2**](https://docs.devlive.org/books/lodash-en-2.4.2) | [**Lodash 1.3.1**](https://docs.devlive.org/books/lodash-en-1.3.1) | [**Markdown 中文版**](https://docs.devlive.org/books/markdown-zh)     |
+###### Lodash Versions
+
+---
+
+| [**Lodash 1.3.1**](https://docs.devlive.org/books/lodash-en-1.3.1) | [**Lodash 2.4.2**](https://docs.devlive.org/books/lodash-en-2.4.2) | [**Lodash 3.10.1**](https://docs.devlive.org/books/lodash-en-3.10.1) | [**Lodash 4.17.15**](https://docs.devlive.org/books/lodash-en-4.17.15) |
+|---|---|---|---|
+
+###### Ramda Versions
+
+---
+
+| [**Ramda 0.1.0**](https://docs.devlive.org/books/ramda-en-0.1.0) | [**Ramda 0.1.1**](https://docs.devlive.org/books/ramda-en-0.1.1) | [**Ramda 0.1.4**](https://docs.devlive.org/books/ramda-en-0.1.4) | [**Ramda 0.2.0**](https://docs.devlive.org/books/ramda-en-0.2.0) | [**Ramda 0.2.2**](https://docs.devlive.org/books/ramda-en-0.2.2) |
+|--------------------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|
+| [**Ramda 0.2.3**](https://docs.devlive.org/books/ramda-en-0.2.3) | [**Ramda 0.3.0**](https://docs.devlive.org/books/ramda-en-0.3.0) | [**Ramda 0.4.0**](https://docs.devlive.org/books/ramda-en-0.4.0) | [**Ramda 0.4.2**](https://docs.devlive.org/books/ramda-en-0.4.2) | [**Ramda 0.5.0**](https://docs.devlive.org/books/ramda-en-0.5.0) |
+| [**Ramda 0.6.0**](https://docs.devlive.org/books/ramda-en-0.6.0) | [**Ramda 0.7.0**](https://docs.devlive.org/books/ramda-en-0.7.0) | [**Ramda 0.8.0**](https://docs.devlive.org/books/ramda-en-0.8.0) | [**Ramda 0.9.0**](https://docs.devlive.org/books/ramda-en-0.9.0) | [**Ramda 0.10.0**](https://docs.devlive.org/books/ramda-en-0.10.0) |
+| [**Ramda 0.11.0**](https://docs.devlive.org/books/ramda-en-0.11.0) | [**Ramda 0.12.0**](https://docs.devlive.org/books/ramda-en-0.12.0) | [**Ramda 0.14.0**](https://docs.devlive.org/books/ramda-en-0.14.0) | [**Ramda 0.15.0**](https://docs.devlive.org/books/ramda-en-0.15.0) | [**Ramda 0.16.0**](https://docs.devlive.org/books/ramda-en-0.16.0) |
+| [**Ramda 0.18.0**](https://docs.devlive.org/books/ramda-en-0.18.0) | [**Ramda 0.19.0**](https://docs.devlive.org/books/ramda-en-0.19.0) | [**Ramda 0.20.0**](https://docs.devlive.org/books/ramda-en-0.20.0) | [**Ramda 0.21.0**](https://docs.devlive.org/books/ramda-en-0.21.0) | [**Ramda 0.22.0**](https://docs.devlive.org/books/ramda-en-0.22.0) |
+| [**Ramda 0.23.0**](https://docs.devlive.org/books/ramda-en-0.23.0) | [**Ramda 0.24.0**](https://docs.devlive.org/books/ramda-en-0.24.0) | [**Ramda 0.25.0**](https://docs.devlive.org/books/ramda-en-0.25.0) | [**Ramda 0.26.0**](https://docs.devlive.org/books/ramda-en-0.26.0) | [**Ramda 0.27.1**](https://docs.devlive.org/books/ramda-en-0.27.1) |
+| [**Ramda 0.28.0**](https://docs.devlive.org/books/ramda-en-0.28.0) | [**Ramda 0.29.0**](https://docs.devlive.org/books/ramda-en-0.29.0) | [**Ramda 0.29.2**](https://docs.devlive.org/books/ramda-en-0.29.2) | [**Ramda 0.30.0**](https://docs.devlive.org/books/ramda-en-0.30.0) | [**Ramda 0.30.1**](https://docs.devlive.org/books/ramda-en-0.30.1) |
+
+###### Other
+
+| [**SpotBugs 4.8.5**](https://docs.devlive.org/books/spotbugs-en-4.8.5)             | [**Coolify**](https://docs.devlive.org/books/coolify-en)           | [**Markdown 中文版**](https://docs.devlive.org/books/markdown-zh)     | [**Underscore.js 1.13.6**](https://docs.devlive.org/books/underscore.js-en-1.13.6)
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------------------|
-| [**Underscore.js 1.13.6**](https://docs.devlive.org/books/underscore.js-en-1.13.6) | [**Ramda 0.30.1**](https://docs.devlive.org/books/ramda-en-0.30.1) | [**Ramda 0.30.0**](https://docs.devlive.org/books/ramda-en-0.30.0) | [**Ramda 0.29.2**](https://docs.devlive.org/books/ramda-en-0.29.2) |
-| [**Ramda 0.29.0**](https://docs.devlive.org/books/ramda-en-0.29.0)                 | [**Ramda 0.28.0**](https://docs.devlive.org/books/ramda-en-0.28.0) | [**Ramda 0.27.1**](https://docs.devlive.org/books/ramda-en-0.27.1) | [**Ramda 0.26.0**](https://docs.devlive.org/books/ramda-en-0.26.0) |
-| [**Ramda 0.25.0**](https://docs.devlive.org/books/ramda-en-0.25.0)                 | [**Ramda 0.24.0**](https://docs.devlive.org/books/ramda-en-0.24.0) | [**Ramda 0.23.0**](https://docs.devlive.org/books/ramda-en-0.23.0) | [**Ramda 0.22.0**](https://docs.devlive.org/books/ramda-en-0.22.0) |
-| [**Ramda 0.21.0**](https://docs.devlive.org/books/ramda-en-0.21.0)                 | [**Ramda 0.20.0**](https://docs.devlive.org/books/ramda-en-0.20.0) | [**Ramda 0.19.0**](https://docs.devlive.org/books/ramda-en-0.19.0) | [**Ramda 0.18.0**](https://docs.devlive.org/books/ramda-en-0.18.0) |
-| [**Ramda 0.16.0**](https://docs.devlive.org/books/ramda-en-0.16.0)                 | [**Ramda 0.15.0**](https://docs.devlive.org/books/ramda-en-0.15.0) | [**Ramda 0.14.0**](https://docs.devlive.org/books/ramda-en-0.14.0) | [**Ramda 0.12.0**](https://docs.devlive.org/books/ramda-en-0.12.0) |
-| [**Ramda 0.11.0**](https://docs.devlive.org/books/ramda-en-0.11.0)                 | [**Ramda 0.10.0**](https://docs.devlive.org/books/ramda-en-0.10.0) | [**Ramda 0.9.0**](https://docs.devlive.org/books/ramda-en-0.9.0)   | [**Ramda 0.8.0**](https://docs.devlive.org/books/ramda-en-0.8.0)   |
-| [**Ramda 0.7.0**](https://docs.devlive.org/books/ramda-en-0.7.0)                   | [**Ramda 0.6.0**](https://docs.devlive.org/books/ramda-en-0.6.0)   | [**Ramda 0.5.0**](https://docs.devlive.org/books/ramda-en-0.5.0)   | [**Ramda 0.4.2**](https://docs.devlive.org/books/ramda-en-0.4.2)   |
-| [**Ramda 0.4.0**](https://docs.devlive.org/books/ramda-en-0.4.0)                   | [**Ramda 0.3.0**](https://docs.devlive.org/books/ramda-en-0.3.0)   | [**Ramda 0.2.3**](https://docs.devlive.org/books/ramda-en-0.2.3)   | [**Ramda 0.2.2**](https://docs.devlive.org/books/ramda-en-0.2.2)   |
-| [**Ramda 0.2.0**](https://docs.devlive.org/books/ramda-en-0.2.0)                   | [**Ramda 0.1.4**](https://docs.devlive.org/books/ramda-en-0.1.4)   | [**Ramda 0.1.1**](https://docs.devlive.org/books/ramda-en-0.1.1)   | [**Ramda 0.1.0**](https://docs.devlive.org/books/ramda-en-0.1.0)   |
-| [**SpotBugs 4.8.5**](https://docs.devlive.org/books/spotbugs-en-4.8.5)             | [**Coolify**](https://docs.devlive.org/books/coolify-en)           |                                                                    |                                                                    |
