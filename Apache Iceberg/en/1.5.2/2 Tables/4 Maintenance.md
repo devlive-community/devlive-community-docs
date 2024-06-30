@@ -35,9 +35,8 @@ SparkActions
 
 Expiring old snapshots removes them from metadata, so they are no longer available for time travel queries.
 
-!!! info
-Data files are not deleted until they are no longer referenced by a snapshot that may be used for time travel or rollback.
-Regularly expiring snapshots deletes unused data files.
+> Data files are not deleted until they are no longer referenced by a snapshot that may be used for time travel or rollback.
+> Regularly expiring snapshots deletes unused data files.
 
 
 ### Remove old metadata files
