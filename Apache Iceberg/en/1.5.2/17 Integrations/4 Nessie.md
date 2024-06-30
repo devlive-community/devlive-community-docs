@@ -31,7 +31,7 @@ Please refer [Nessie SQL extension document](https://projectnessie.org/tools/sql
 
 ## Nessie Catalog
 
-One major feature introduced in release `0.11.0` is the ability to easily interact with a [Custom Catalog]($Java-Custom-Catalog) from Spark and Flink. See [Spark Configuration](spark-configuration.md#catalog-configuration)
+One major feature introduced in release `0.11.0` is the ability to easily interact with a [Custom Catalog]($Java-Custom-Catalog) from Spark and Flink. See [Spark Configuration]($S-Configuration#catalog-configuration)
 and [Flink Configuration]($Flink-Getting-Started#custom-catalog) for instructions for adding a custom catalog to Iceberg.
 
 To use the Nessie Catalog the following properties are required:
