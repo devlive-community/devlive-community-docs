@@ -8,6 +8,10 @@
 
 [**Apache Iceberg 1.5.2**](https://docs.devlive.org/books/apache-iceberg-en-1.5.2)
 
+###### Apache Hudi Versions
+
+[**Apache Hudi 0.15.0**](https://docs.devlive.org/books/apache-hudi-en-0.15.0)
+
 | [**Apache Ambari Installation 2.7.5.0 英文版**](https://docs.devlive.org/books/apache-ambari-en-installation-2.7.5.0) | [**Apache Ambari Installation 2.7.5.0 中文版**](https://docs.devlive.org/books/apache-ambari-zh-installation-2.7.5.0) | [**Apache Ambari Installation 2.7.4.0 英文版**](https://docs.devlive.org/books/apache-ambari-en-installation-2.7.4.0) | [**Apache DolphinScheduler 1.2.0 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-1.2.0) |
 |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [**Apache DolphinScheduler 1.2.1 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-1.2.1)          | [**Apache DolphinScheduler 1.3.1 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-1.3.1)          | [**Apache DolphinScheduler 3.2.1 中文版**](https://docs.devlive.org/books/apache-dolphin-scheduler-zh-3.2.1)          | [**Apache StreamPark 202405 英文版**](https://docs.devlive.org/books/apache-streampark-en-202405)            |
