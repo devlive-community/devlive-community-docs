@@ -23,7 +23,7 @@ So the whole thing here is to let Spark applications use this copy of Hive confi
 By default, Kyuubi launches Spark SQL engines pointing to a dummy embedded [Apache Derby](https://db.apache.org/derby/)-based metastore for each application,
 and this metadata can only be seen by one user at a time, e.g.
 
-```shell script
+```shell 
 bin/beeline -u 'jdbc:hive2://localhost:10009/' -n kentyao
 Connecting to jdbc:hive2://localhost:10009/
 Connected to: Spark SQL (version 1.0.0-SNAPSHOT)
@@ -191,5 +191,3 @@ To prevent this problem, we can use Spark's [Interacting with Different Versions
 - Spark Online Documentation
     - [Custom Hadoop/Hive Configuration](https://spark.apache.org/docs/latest/configuration.html#custom-hadoophive-configuration)
     - [Hive Tables](https://spark.apache.org/docs/latest/sql-data-sources-hive-tables.html)
-
-
