@@ -88,7 +88,9 @@ UPDATE hudi_cow_pt_tbl SET name = 'a1_1', ts = 1001 WHERE id = 1;
 update hudi_cow_pt_tbl set ts = 1001 where name = 'a1';
 ```
 
-> The `UPDATE` operation requires the specification of a `preCombineField`.
+> The `UPDATE` operation requires the specification of a `preCombineField` if the `hoodie.record.merge.mode` is set to EVENT_TIME_ORDERING.
+> The `UPDATE` does not allow changing the `recordKey` field and partition columns of existing records.
+
 
 ### Merge Into
 
@@ -152,8 +154,9 @@ when not matched then
 
 > Key requirements
 >
-> For a Hudi table with user configured primary keys, the join condition in `Merge Into` is expected to contain the primary keys of the table.
+> For a Hudi table with user configured primary keys, the join condition and the update/insert clause in `Merge Into` is expected to contain the primary keys of the table.
 > For a Table where Hudi auto generates primary keys, the join condition in MIT can be on any arbitrary data columns.
+> if the `hoodie.record.merge.mode` is set to EVENT_TIME_ORDERING, the `preCombineField` is required to be set with value  in the update/insert clause.
 
 ### Delete From
 
